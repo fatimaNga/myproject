@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my profile</title>
+    <style>
+        .row{
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .col-1{
+            flex:0 0 auto;
+            width: 8.33333%;
+        }
+        .col-3{
+            flex: 0 0 auto;
+            width: 25%;
+        }
+        .col-2{
+            flex:0 0 auto;
+            width:16.666667%;
+        }
+        .col-9{
+            flex: 0 0 auto;
+            width: 75%;
+        }
+        .col-10{
+            flex:0 0 auto;
+            width: 83.33333%;  
+        }
+        .bg-dark{
+            background-color: black;
+        }
+        .background-yellow{
+            background-color: greenyellow;
+        }
+        .min-vh{
+            height: 100vh;
+            
+        }
+        .text-white{
+            color: white;
+        }
+        .img-size{
+            height: 100px;
+            width: 100px;
+        }
+        .mt-2{
+            margin-top: 200px;  
+        }
+        .img-left{
+            margin-left: 15px;
+        }
+        .img-circle{
+            border-radius: 50%;
+            border:2px solid white
+        }
+        .ml-a{
+            margin-left: 20px;
+            text-align: center;
+        }
+        a:hover{
+            color: white;
+        }
+        a:active{
+            color: red;
+        }
+        #right-div:hover{
+            background-color: yellowgreen;
+        }
+        .mt-h3{
+            margin-top: 200px;
+        }
+        .p-left{
+            padding-left: 30px;
+        }
+        .img-size-big{
+            height: 400px;
+            width: 300px;
+        }
+        .img-border{
+            border: 3px solid light greenyellow;
+        }
+        </style>
+</head>
+<body>
+
+    <div class="row min-vh">
+        <div class= "col-2 bg-dark text-white">
+             <!--left div-->
+            <img src="/wwwroot/images/OIP.jpg" class="img-size mt-2 img-left img-circle">
+            <div class="ml-a">
+                <!--links here-->
+                <a href="#">Home</a>
+                <br>
+                <a href="#">Contact me</a>
+                <br>
+                <a href="#">About</a>
+            </div>
+        </div>
+        <div class="col-10">
+             <!--right div-->
+             <div class="p-left">
+              <h3 class="mt-h3">About Me</h3>
+             <div class="row">
+                  <div class="col-3">
+                      <!--left sub div for image-->
+                      <img src="wwwroot/images/celebrity picture.jpg"
+                      class="img-size-big img-border ">
+                    </div>
+                  <div class="col-9">
+                      <!--right sub div-->
+                      <h4>who am i</h4>
+                      <small>Get to know me</small>
+                      <h3>I am a web designer & a content creator</h3>
+                     <P>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        <br>
+                        Why do we use it?
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                        <br>
+                        
+                        Where does it come from?
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                     </P>
+                     <label><strong>Email:</strong> myemail@library.com</label><br><br>
+                     <label><strong>phone number</strong>
+                        <ol>
+                            <li>08065565656</li>
+                            <li>09076765646</li>
+                        </ol>
+                    <br>
+                    <botton><strong>contact me!</strong></botton>
+                    </label>
+                    </div>
+             </div>
+         </div>              
+     </div>
+
+</body>
+</html>

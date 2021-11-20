@@ -4,77 +4,231 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<style>
-    .myPic      {
-        margin-left: 100px;
-        margin-top: 10px
-    }
-    #myId{
-        margin-left: 100px;
-
-        color: blue; background-color:orange;
-    }
-    img{}
-
-        </style>
-</head>  
+    <title>navbar page</title>
+    <link rel="stylesheet" href="/wwwroot/css/bootstrap.css" rel="stylesheet">
+    <style>
+        .bg-box-skyblue{
+            background-color:skyblue;
+        }
+        .img-circle{
+            border-radius:50%;
+        }
+    </style>
+</head>
 <body>
-    <ol>
-        <li>Agaie</li>
-        <li>Agwara</li>
-        <li>Bida
-            <ol>
-                <li>Masaba</li>
-                <ul>
-                    <li>Zone A</li>
-                    <li>Zone B</li>
-                    
-                </ul>
+    <!--navbar begins-->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand">Home</a>
+            <button type="button" class="navbar-toggler" data-bs-target="#myNavbar" data-bs-toggle="collapse" aria-expanded="false" aria-labelledby="myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </botton>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">contact</a>
+                    </li>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link">Activity</a>
+                    </div>
+                  
+                        <div class="nav-item ms-auto">
+                            <a href="#" class="nav-link">Log in</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#" class="nav-link">Register</a>
+                        </div>
+                    </ul>
+            </div>
+        </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="/navbar.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Assignment 2.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Activity</a>
+              </li>
+              
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/login.html">Log In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Register.html">Register</a>
+                  </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!--navbar ends here-->
+    <div>
 
-                <li>Wadata</li>
-            </ol>
-        </li>
-        <li> Mokwa</li>
-        <li>Katcha</li>
-        <li>Kontagora</li>
-    </ol>
-    <ul>
-        <li>Agaie</li>
-        <ul>
-            <li>Word A</li>
-            <li>Word B</li>
-            <li>Word C</li>
-        </ul>
-        <li>Agwara</li>
-        <li>Bida</li>
-        <li> Mokwa</li>
-        <li>Katcha</li>
-        <li>Kontagora</li>
-    </ul>
-    <h5 id="myId" class="myPic" >Web design class</h5>
-    <small style="font-size: 15; font-style: italic;font-weight: bolder;">Web design using html, css & javascript</small>
-    <div>this is div tag</div>
-    <footer>this is footer</footer>
-    <br><br>
-    <img class="myPic" src="https://wallsdesk.com/wp-content/uploads/2016/10/Bear-Wallpaper-.jpg" height="300" width="400" margin-left="200" margin-top="100">
-    <br>
-    <img class ="myPic" src="https://wallsdesk.com/wp-content/uploads/2016/10/Bear-Wallpaper-.jpg" height="300" width="400">
-    <br><br>
-    <label>this a label tag</label>
-    <br><br>
-    <input type="password" placeholder="enter your password">
-    <br><br>
-    <input type ="text" placeholder="enter your name">
-    <br><br>
-    <input type ="file">
-    <br><br>
-    <input type ="number">
-    <br><br>
-    <input type ="date">
-    <br><br>
-    <input type="button" value="save button"> 
-    
-    
+        <!--slide show begins-->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                   <img src="/wwwroot/images/6th img.jpg" class="d-block w-100" height="600">
+                   <div class="carousel-caption">
+                       <h2>this is slide 1</h2>
+                       <p>something about the first slide images, dont worry its nothing</p>
+                       <button type="button" class="btn btn-primary">login</button>
+                   </div>
+                </div> 
+                <div class="carousel-item">
+                    <img src="/wwwroot/images/7th img.jpg" class="d-block w-100" height="600"> 
+                </div>
+                <div class="carousel-item">
+                    <img src="/wwwroot/images/5th img.jpg" class="d-block w-100" height="600"> 
+                </div>
+                <div class="carousel-item">
+                    <img src="/wwwroot/images/11 img.jpg" class="d-block w-100" height="600">
+                </div>
+            </div>
+            <!--end of carousel- inner-->
+            <div class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">prev</span>
+            </div>
+            <!--control next-->
+            <div class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">next</span>
+                <!--carousel-indicators-start-here-->
+           </div>
+           <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="0" aria-label="slide 1" class="active" aria-current="true"></button>
+               <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="1" aria-label="slide 2"></button>
+               <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="2" aria-label="slide 3"></button>
+               <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="3" aria-label="slide 4 "></button>
+           </div>
+        </div>
+    </div>
+<!--carousel slide ends here-->
+<!--body-section-begins-->
+<div class="container">
+    <!--who-we-are-->
+    <div class="row">
+        <div class="text-center">
+            <h2 class="text-primary">Who We Are</h2>
+        <h6 class="text-muted">Get To Know About Our Mission and Vission</h6>
+
+        <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other.
+        </p>
+        <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other.
+        </p>
+        </div>
+    </div>
+    <!--ends-of-who-we-are-->
+    <!--our-services-begins-here-->
+    <div class="row d-flex justify-content-center text-center">
+        <h2 class="text-primary">our Services</h2>
+        <h6 class="text-muted">Get To Know About Our Services</h6>
+        <div class="col-3 border-5 mx-3 bg-box-skyblue">
+            <h4>Training</h4>
+            <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code </p>
+        </div>
+        <div class="col-3 border-5 mx-3 bg-box-skyblue">
+            <h4>Internship</h4>
+            <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code </p>
+        </div>
+        <div class="col-3 border-5 mx-3 bg-box-skyblue">
+            <h4>Research</h4>
+            <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code </p>
+        </div>
+    </div>
+    <!--ends of our services-->
+    <div class="row mt-4">
+        <div class="col-2" style="margin-left:200px;">
+            <img src="/wwwroot/images/10th img.jpg" height="200"
+            width="200" class="img-circle border-3">
+
+        </div>
+        <div class="col-6 mt-4 me-2">
+        <h2 class=" text-primary">The Chief Executive Chairman</h2>
+        <h6 cla ss="text-muted">Get to Know Our CEO</h6>
+        <p>
+            Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can
+        </p>
+    </div>
+    </div>
+<!--end-of our ceo-->
+<div class="row mt-5 d-flex justify-content-center text-center">
+
+    <h5 class="text-muted">Our Statistics Speaks for Us</h5>
+    <div class="col-3">
+        <h1>47</h1>
+        <h4>Training</h4>
+    </div>
+ 
+    <div class="col-3">
+        <h1>2470</h1>
+        <h4>Student</h4>
+    </div>
+
+    <div class="col-3">
+        <h1>29</h1>
+        <h4>Research</h4>
+    </div>
+</div>
+<!--our member staff begins -->
+<div class="row mt-5 py-5 my-5 d-flex justify-content-center text-center">
+     <h5 class="text-mute">Our Member Staff</h5>
+        <div class="col-3">
+         <img src="/wwwroot/images/15th img.jpg" height="200"
+         width="200" class="img-circle border border-3">
+         <h4>Saidu Minin</h4>
+         <h5>saidu@mail.com</h5>
+         <h5>Administrative</h5>
+
+     </div>
+        <div class="col-3" >
+        <img src="/wwwroot/images/12th img.jpg" height="200"
+        width="200" class="img-circle border border-3">
+        <h4>Yahya Ndagana</h4>
+        <h5>yahya@mail.com</h5>
+        <h5>IT</h5>
+
+    </div>
+        <div class="col-3">
+        <img src="/wwwroot/images/13th img.jpg" height="200"
+        width="200" class="img-circle border border-3">
+        <h4>Fatiam Ibrahim</h4>
+        <h5>fatima@mail.com</h5>
+        <h5>Human Resource</h5>
+
+    </div>
+        <div class="col-3">
+        <img src="/wwwroot/images/14th img.jpg" height="200"
+        width="200" class="img-circle border border-3">
+        <h4>Rukkaya Aliyu</h4>
+        <h5>saidu@mail.com</h5>
+        <h5>Administrative</h5>
+    </div>
+ </div>
+ <!--body section ends here-->
+
+ <!--footer section begins-->
+ <footer class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+     <div class="container text-white d-flex justify-content-center">
+         &copy; Expert class training - All rights reserved 2021
+
+     </div>
+ </footer>
+    <script src="/wwwroot/js/bootstrap.bundle.js"></script>
 </body>
 </html>

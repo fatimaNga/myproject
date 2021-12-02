@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/wwwroot/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Gallery</title>
+    <style>
+    
+.bg{
+   background-color:grey;
+}
+        
+.menu-bar{
+    background-color:brown;
+    text-align: center;
+}
+.logo{
+    font-size: 30px;
+    font-weight:bolder;
+    font-family: 'Dancing cursive', cursive;
+    color:grey;
+    margin-block-end: 10px;
+    margin:15px;
+    margin-right: 100px;
+}
+.menu-bar ul{
+    display: inline-flex;
+    color:white;
+    list-style: none;
+}
+.menu-bar .fas{
+    margin-right: 8px;
+
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    margin-left: 50px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.active, .menu-bar ul li:hover{
+    background:grey;
+    border-radius: 3px;
+}
+.gallery{
+  margin-top: 15px;
+  padding: 15px;
+}
+    </style>
+</head>
+<body class="bg">
+    <div class="menu-bar">
+        <ul><h1 class="logo">Fib<span>-Stitches.</span></h1>
+            <li><a href="/Index.html"><i class="fas fa-user"></i>Home</a></li>
+          <li><a href="/about.html"><i class="fas fa-user"></i>About Us</a></li>
+          <li><a href="/Services.html"><i class="fas fa-edit"></i>Services</a></li>
+          <li><a href="/Gallery.html"><i class=" fas fa-bars"></i>Gallery</a></li>
+          <li><a href="/Contact.html"><i class="fas fa-phone"></i>Contact</a></li>
+          <li><a href="/Register.html"><i class="fas fa-edit"></i>Register</a></li>
+          
+        </ul>
+    </div>
+            <div class="row gallery d-flex justify-content-center text-center">
+                <h2 class="text -dark">Company Gallery</h2>
+            </div>
+     
+        <!--slide show begins-->
+        <h2 class="text-center text-white">Bridal</h2>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="d-flex justify-content-center text-center">
+                <div class="carousel-item active">
+                  <img src="/wwwroot/images/sty10.jfif" class="d-block w-50" height="600">
+                </div> 
+                  <div class="carousel-caption">
+                      <h2>Bridal</h2>
+                      <p>Bridal is clothing made to an individual buyer's specifications by a tailor.</p>
+                      
+                  </div>
+               
+               <div class="carousel-item">
+                   <img src="/wwwroot/images/sty8.jfif" class="d-block w-50" height="600"> 
+               </div>
+               <div class="carousel-item">
+                   <img src="/wwwroot/images/sty9.jpg" class="d-block w-50" height="600"> 
+               </div>
+               <div class="carousel-item">
+                   <img src="/wwwroot/images/sty2.jpg" class="d-block w-50" height="600">
+               </div>
+               <div class="carousel-item">
+                <img src="/wwwroot/images/sty1.jpg" class="d-block w-50" height="600">
+            </div>
+               <h2>Bridal</h2>
+               <p>Bespoke is clothing made to an individual buyer's specifications by a tailor Bespoke is clothing made to an individual buyer's .</p>
+           </div>
+           <!--end of carousel- inner-->
+           <div class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">prev</span>
+           </div>
+           <!--control next-->
+           <div class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">next</span>
+               <!--carousel-indicators-start-here-->
+          </div>
+              </div>
+         <div class="carousel-indicators">
+             <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="0" aria-label="slide 1" class="active" aria-current="true"></button>
+             <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="1" aria-label="slide 2"></button>
+             <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="2" aria-label="slide 3"></button>
+             <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="3" aria-label="slide 4 "></button>
+         </div>
+      </div>
+
+    <div class="py-5">
+        <h2 class="text-center text-white">Bespoke</h2>
+      <div id="carousel" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="d-flex justify-content-center text-center">
+              <div class="carousel-item active">
+                <img src="/wwwroot/images/img12.jpg" class="d-block w-50" height="600">
+              </div> 
+                <div class="carousel-caption">
+                    <h2>Bespoke</h2>
+                    <p>Bespoke is clothing made to an individual buyer's specifications by a tailor.</p>
+                   
+                </div>
+             
+             <div class="carousel-item">
+                 <img src="/wwwroot/images/img13.jpg" class="d-block w-50" height="600"> 
+             </div>
+                 
+             <div class="carousel-item">
+                <img src="/wwwroot/images/img16.jpg" class="d-block w-50" height="600"> 
+            </div>
+             <div class="carousel-item">
+                 <img src="/wwwroot/images/img14.jpg" class="d-block w-50" height="600"> 
+             </div>
+             <div class="carousel-item">
+                 <img src="/wwwroot/images/img17.jpg" class="d-block w-50" height="600">
+             </div>
+             <h2>Bridal</h2>
+             <p>Bridal is clothing made to an individual buyer's specifications by a tailor Bespoke is clothing made to an individual buyer's .</p>
+         </div>
+         <!--end of carousel- inner-->
+         <div class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">prev</span>
+         </div>
+         <!--control next-->
+         <div class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">next</span>
+             <!--carousel-indicators-start-here-->
+        </div>
+            </div>
+       <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="0" aria-label="slide 1" class="active" aria-current="true"></button>
+           <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="1" aria-label="slide 2"></button>
+           <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="2" aria-label="slide 3"></button>
+           <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="3" aria-label="slide 4 "></button>
+       </div>
+    </div>
+
+    </div>
+   <div class="py-5">
+    <h2 class="text-center text-white">kid's Wear</h2>
+    <div id="carousel" class="carousel slide mt-5 mb-5 " data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="d-flex justify-content-center text-center">
+              <div class="carousel-item active">
+                <img src="/wwwroot/images/kid4.jpg" class="d-block w-50" height="600">
+              </div> 
+                <div class="carousel-caption">
+                    <h2>kid's wear</h2>
+                    <p>Kid's Wear is clothing made to an individual buyer's specifications by a tailor.</p>
+                    
+                </div>
+             
+             <div class="carousel-item">
+                 <img src="/wwwroot/images/kid6.jpg" class="d-block w-50" height="600"> 
+             </div>
+             <div class="carousel-item">
+                 <img src="/wwwroot/images/kid3.jpg" class="d-block w-50" height="600"> 
+             </div>
+             <div class="carousel-item">
+                 <img src="/wwwroot/images/kid2.jpg" class="d-block w-50" height="600">
+             </div>
+             <div class="carousel-item">
+                <img src="/wwwroot/images/kid1.jpg" class="d-block w-50" height="600">
+            </div>
+             <h2>kid's wear</h2>
+             <p>Bespoke is clothing made to an individual buyer's specifications by a tailor Bespoke is clothing made to an individual buyer's .</p>
+         </div>
+         <!--end of carousel- inner-->
+         <div class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">prev</span>
+         </div>
+         <!--control next-->
+         <div class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">next</span>
+             <!--carousel-indicators-start-here-->
+        </div>
+            </div>
+       <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="0" aria-label="slide 1" class="active" aria-current="true"></button>
+           <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="1" aria-label="slide 2"></button>
+           <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="2" aria-label="slide 3"></button>
+           <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="3" aria-label="slide 4 "></button>
+       </div>
+    </div>
+
+   </div>
+    
+<!--carousel slide ends here-->
+</section>
+<footer class="menu-bar fixed-bottom ">
+  <div class="container text-dark d-flex justify-content-center">
+    <div class="row">
+      &copy;Fib-Stitches - All rights reserved 2021
+  <div class="row">
+    <div class="col-2">
+      <i class="bi bi-instagram"></i>
+    </div>
+    <div class="col-2">
+      <i class="bi bi-facebook"></i>
+    </div>
+    <div class="col-2">
+      <i class="bi bi-twitter"></i>
+    </div>
+    <div class="col-2">
+      <i class="bi bi-envelope"></i>
+    </div>
+  </div>
+</div>
+</div>
+  
+</footer>
+<script src="/wwwroot/js/bootstrap.bundle.js"></script>
+</body>
+</html>

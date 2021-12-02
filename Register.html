@@ -4,96 +4,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/wwwroot/css/bootstrap.css" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="#">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Activity</a>
-              </li>
+    <link rel="stylesheet" href="/wwwroot/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Register</title>
+    <style>
+        .bg{
+         background-color:white;
+        }
               
-            </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Log In</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link ">Register</a>
-                  </li>
-            </div>
+       .img-circle{
+            border-radius: 100%;
+            border:2px solid white
+        }
+       .menu-bar{
+           background-color:brown;
+           text-align: center;
+       }
+       .logo{
+           font-size: 30px;
+           font-weight:bolder;
+           font-family: 'Dancing cursive', cursive;
+           color:grey;
+           margin-block-end: 10px;
+           margin:15px;
+           margin-right: 100px;
+       }
+       .menu-bar ul{
+           display: inline-flex;
+           color:white;
+           list-style: none;
+       }
+       .menu-bar .fas{
+           margin-right: 8px;
+       
+       }
+       .menu-bar ul li{
+           width: 120px;
+           margin: 15px;
+           padding: 15px;
+           margin-left: 50px;
+       }
+       .menu-bar ul li a{
+           text-decoration: none;
+           color: black;
+       }
+       .active, .menu-bar ul li:hover{
+           background:grey;
+           border-radius: 3px;
+       }
+       .card{
+           padding:30px;
+           background-color:rgb(236, 239, 240);
+           border-radius: 15px;
+           width: 600px;
+           height: 750px;
+           margin-top: 50px;
+       }
+       .mt{
+         margin-top: -70px;
+       }
+       .input{
+       border: radius 50%;
+       margin-top: -60px;
+       padding-top: -20px;
+       }
+       .bg-img{
+           background-image: url(/wwwroot/images/img27.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+       }
+           </style>
+</head>
+<div class="menu-bar">
+    <ul>
+        <h1 class="logo">Fib<span>-Stitches.</span></h1>
+        <li><a href="/Index.html"><i class="fas fa-user"></i>Home</a></li>
+        <li><a href="/about.html"><i class="fas fa-user"></i>About Us</a></li>
+        <li><a href="/Services.html"><i class="fas fa-edit"></i>Services</a></li>
+        <li><a href="/Gallery.html"><i class=" fas fa-bars"></i>Gallery</a></li>
+        <li><a href="/Contact.html"><i class="fas fa-phone"></i>Contact</a></li>
+        <li><a href="/Register.html"><i class="fas fa-edit"></i>Register</a></li>
+        
+       
+    </ul>
+</div>
+<body class="bg-img">
+    <div class="container card">
+        <div class="row mt-10">
+            <div class="d-flex justify-content-center">
+                <form>
+                    <div class="text-center mb-5 ml-10">
+    
+                     
+                        <h2 class="mb-10">Register with Us</h2>
+                        <Small>Get enrolled into our Fashion/Tailoring school.</Small>
+                    </div>
+                   <div>
+                       <div class="row input ">
+                           
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" class="form-control" placeholder="enter your name"><br>
+                            </div>
+                           
+                           
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="text" class="form-control" placeholder="enter your Number"><br>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="enter your email" ><br>
+                            </div>
+                           
+                            <div class="form-group"> 
+                                <label>Address</label>
+                                <input type="text" class="form-control" placeholder=""><br>
+                               </div>
+                                                   
+                            <div class="form-group">
+                                <label>Duration</label>
+                                <input type="text" class="form-control"><br>
+                            </div>
+                            
+                            <div class="form-group text-center">
+                                <label>Student's interests & Skills </label>
+                                <textarea name="message" id="#message" class="form-control" cols="50" rows="5"></textarea>
+                            </div> 
+                           </div>
+                       </div>                   
+                      
+                       <div>
+                        <input type="submit" class=" btn btn-secondary mt-2" value="Register">
+                       </div>
+                   </div>
+                </form>
+              </div>
+              </div>
+    <footer class="menu-bar fixed-bottom ">
+        <div class="container text-dark d-flex justify-content-center">
+          <div class="row">
+            &copy;Fib-Stitches  - All rights reserved 2021
+        <div class="row">
+          <div class="col-2">
+            <i class="bi bi-instagram"></i>
+          </div>
+          <div class="col-2">
+            <i class="bi bi-facebook"></i>
+          </div>
+          <div class="col-2">
+            <i class="bi bi-twitter"></i>
+          </div>
+          <div class="col-2">
+            <i class="bi bi-envelope"></i>
           </div>
         </div>
-      </nav>
-      <!--form begins-->
-    <div class="min-vh">
-         <div class="container">
-             <div class="row">
-               <form class="d-flex justify-content-center mt-5">
-
-                  <div class="col-md-6">
-                       <h3 class="text-center">Register</h3><br>
-                       <small class="text-muted mb-2">Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
-                       </small>
-                       <!--your form begins here-->
-                       <div class="form-group mt-2">
-                            <label>First Name</label>
-                            <input type="text" class="form-control">
-                       </div>
-                       <div class="form-group">
-                            <label>Last   Name</label>
-                            <input type="text" class="form-control">
-                       </div>
-                       <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Enter your email" required>
-                       </div>
-                       <div class="form-group">
-                        <label>Phone Number</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group">
-                        <label>Date of Birth</label>
-                        <input type="date" class="form-control">
-                      </div> 
-                      <div class="form-group">
-                        <label>Gender</label>
-                        <select class="form-control">
-                             <option>Select Gender</option>
-                             <option>Male</option>
-                             <option>Female</option>
-                        </select>
-                      <div class="mt-2">
-                           <button type="button" class=" btn btn-primary">Register</button>
-                           <button type="button" class=" btn btn-danger">Cancel</button>
-                      </div>
-                  </div>
-               </form>
-
-             </div>
-
-         </div>
-
-    </div>
-
-      <footer class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
-        <div class="container text-white d-flex justify-content-center">
-            &copy; Expert class training - All rights reserved 2021
-   
-        </div>
-    </footer>
+      </div>
+      </div>
+      <script src="/wwwroot/js/bootstrap.bundle.js"></script>  
+      </footer>
 </body>
 </html>
